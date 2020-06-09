@@ -555,8 +555,8 @@ const getStep = urlString => {
 };
 
 const getId = urlString => {
-  const idStartIndex = urlString.indexOf('/');
-  const idEndIndex = urlString.indexOf('/steps');
-  const id = urlString.substring(idStartIndex + 1, idEndIndex);
+  const idEnd = urlString.indexOf('/steps');
+  const idBegin = urlString.lastIndexOf('/', idEnd - 1);
+  const id = urlString.substring(idBegin + 1, idEnd);
   return id;
 };
