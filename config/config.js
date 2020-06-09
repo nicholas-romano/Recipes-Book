@@ -15,10 +15,10 @@ module.exports = {
     dialect: 'mysql'
   },
   production: {
-    username: 'root',
+    username: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: 'recipes_db',
-    host: '127.0.0.1',
+    host: 'pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     dialect: 'mysql'
   }
 };
