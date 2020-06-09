@@ -17,7 +17,7 @@ module.exports = {
   production: {
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: 'recipes_db',
+    database: 'gflmr1qymxeoym0u',
     host: 'pqxt96p7ysz6rn1f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     dialect: 'mysql'
   }
