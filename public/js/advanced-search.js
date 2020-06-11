@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = 'ae817b3f66f04aa9b0c8c91f21d78ecd';
 
 $(document).ready(() => {
 
