@@ -139,10 +139,29 @@ const displayRecipeDetails = (title, vegetarian, vegan, veryHealthy, prepTime,
   const nutritionTable = getNutritionTable(nutrition);
   $('#nutrition-table tbody').append(nutritionTable);
 
-  if (sourceName !== null) {
-    $('#source-name').show().text(sourceName).attr('href', sourceUrl);
-  } else {
+  console.log("source Name: ", sourceName);
+  console.log("source Url: ", sourceUrl);
+
+
+  if (sourceName !== '' && sourceUrl !== '') {
     $('#source-name').hide();
+    $('#source-link').hide();
+    $('#source-name-link').show();
+    $('#source-name-link p .source').text(sourceName).attr('href', sourceUrl);
+  }
+
+  if (sourceName === '' && sourceUrl !== '') {
+    $('#source-name-link').hide();
+    $('#source-name').hide();
+    $('#source-link').show();
+    $('#source-link p .source').text(sourceUrl).attr('href', sourceUrl);
+  } 
+
+  if (sourceName !== '' && sourceUrl === '') {
+    $('#source-name-link').hide();
+    $('#source-link').hide();
+    $('#source-name').show();
+    $('#source-name .source').text(sourceName);
   }
 
 };

@@ -60,6 +60,18 @@ form.login {
   display: none;
 }
 
+#source-name-link {
+  display: none;
+}
+
+#source-name {
+  display: none;
+}
+
+#source-link {
+  display: none;
+}
+
 .ingredient-item {
   height: 200px;
   width: 150px;
