@@ -7,9 +7,13 @@ body {
     text-align: center;
 }
 
+#advanced-search header {
+    font-size: 18pt;
+}
+
 form {
     margin: 30px;
-    width: 70%;
+    width: 80%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;

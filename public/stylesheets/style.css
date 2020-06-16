@@ -2,6 +2,11 @@
   margin-bottom: 50px;
 }
 
+.members-title-heading {
+  text-align: center;
+  font-size: 40pt;
+}
+
 .align-right {
   float: right;
 }

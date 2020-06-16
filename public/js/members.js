@@ -21,7 +21,7 @@ $(document).ready(function() {
       console.log('recipe data: ', data);
 
       if (data.length > 0) {
-        $('#content-container').append('<h3>My Recipe Book</h3>');
+        $('#content-container').append('<h3>Recipes Saved</h3>');
 
         for (let i = 0; i < data.length; i++) {
           const recipe = createMyRecipeCard(data[i]);
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
       } else {
         $('#content-container').append(`
-          <h3>My Recipe Book</h3>
+          <h3>Recipes Saved</h3>
           <p>You do not currently have any recipes in your Recipes Book. 
           Enter a search term in the Search box above and click search or
           go to the Advanced search page and complete the form</p>
