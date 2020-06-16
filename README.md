@@ -1,45 +1,42 @@
-# Recipes-Project
+# Recipe Book &middot; ![node](https://img.shields.io/badge/node-12.16.2-blue) ![mysql](https://img.shields.io/badge/mysql-2.18.1-blue) ![mysql](https://img.shields.io/badge/mysql2-1.7.0-blue) ![sequelize](https://img.shields.io/badge/sequelize-5.21.12-blue) ![express](https://img.shields.io/badge/express-4.17.1-blue) ![bcrypt](https://img.shields.io/badge/bcrypt-4.0.1-blue) ![passport](https://img.shields.io/badge/passport-0.4.1-blue) 
 
-Project 2 Requirements if you want to get started.
+![Recipe Book](/images/Recipe-Book-home-page.png) 
 
-## Project 2
+## Description 
+This application gives the user the ability to search for recipes based on keyword and dietary needs and allows them to view details, walk through the steps, and save recipes to their recipe book. 
 
-## Application Requirements
+## Table of Contents 
+* [Installation](#installation) 
+* [Usage](#usage) 
+* [Collaborators](#collaborators) 
+* [License](#license) 
+* [Questions](#questions) 
+ 
+## Installation 
+0. Navigate to project folder in your terminal/command line  
+1.  Install the following packages by typing the following and pressing enter: npm i bcrypt bcryptjs dotenv env express express-session mysql mysql2 passport passport-local sequelize  
+2.  Get an API Key from the Spoonacular API by creating an account on [spoonacular.com/.](https://spoonacular.com/.)  
+ 
+## Usage 
+1.  The user starts by signing up for an account, and then logging in.  
+2.  Once they have logged in, they are taken to their recipe book page with a message instructing them to search for recipes using either the global search at the top of the page, or the advanced search, provided by selecting the Advanced Search link. ![Recipes-home-no-recipes-added](/images/Recipes-home-no-recipes-added.png) 
+3.  When search criteria text is entered in the search box and the “Search” button is clicked, results are displayed below displaying each recipe’s image, title, prep time, servings, and action buttons. The user has the option to either add the recipe to their recipe book by selecting the “Add” button, or viewing the recipe details first by selecting the “Details” button. ![Recipes-Global-Search](/images/Recipes-Global-Search.png) 
+4.  Selecting the “Details” button will display the details for that recipe including recipe title, prep time, servings, description, cuisine categories (if available), diet categories (if applicable), ingredients list (includes images), and nutrition information (displayed in a table). At the top and bottom of this page is a “Go Back” button which takes the user back to their recipe book page, and a “Start Cooking” button which takes the user to the first step in the recipe. ![Recipe-Details-1](/images/Recipe-Details-png)![Recipe-Details-2](/images/Recipe-Details-png)
+5.  When the user selects the “Start-Cooking” button, they are taken to Step 1 of the cooking process. Each step displays the equipment needed (if applicable), the ingredients needed (if applicable, some images may not be displayed), and the directions at the bottom. When the user is done with the current step, they can select the “Next button” to go to the next step or the previous button to go to the previous step or the Details page if the user is currently on the first step. On the last step of the recipe, the “Done” button is displayed in place of the “Next” button. Selecting the “Done” button will redirect the user back to their Recipe Book page. ![Recipe-Step-1](/images/Recipe-Step-1.png)
+6.  When a recipe is searched for either using the global search or the Advanced search page, and the “Add” button is pressed, an alert is displayed notifying the user that the recipe was just added to their recipe book. To view the recipe just added, the user must select the “My Recipes” link in the navigation bar. There they will see the recipe just added with a source link at the bottom. ![Added-Recipe](/images/Added-Recipe.png) 
+7.  This is the Advanced Search form. ![Recipes-Advanced-Search-1](/images/Recipes-Advanced-Search-1.png) The user can enter various search criteria such as dish name, cuisine, prep time, and maximum amount of  calories, carbs, fat, sodium, and sugar. They can also search based on diet such as vegetarian, or ketogenic and intolerances such as dairy and gluten. ![Recipes-Advanced-Search-2](/images/Recipes-Advanced-Search-2.png) 
+ 
 
-* Must use a Node and Express server
-* Must be backed by a MySQL database and an ORM (not necessarily Sequelize)
-* Must utilize both GET and POST routes for retrieving and adding new data
-* Must be deployed using Heroku (with data)
-* Must utilize at least one new third-party API
-* Must have a polished UI
-* Must use a CSS framework _other than_ Bootstrap
-* Must follow MVC paradigm
-* Must meet good quality coding standards (indentation, scoping, naming)
-* Must use Handlebars.js
+## Collaborators 
+* Tevin Ward [github.com/TevinWard7/Recipes-Project](https://github.com/TevinWard7/Recipes-Project)- Created Advanced Search form and AJAX API query requests for Advanced Search form 
+* created delete express route to remove recipes from database 
+  
+Spoonacular API [spoonacular.com/](https://spoonacular.com/) 
 
-## Presentation Requirements
+## License 
+There is not a license for this application. 
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following:
+## Questions 
+![GitHub Profile Image](https://avatars.githubusercontent.com/u/6642173?) 
 
-* Elevator pitch: a one minute description of your application
-* Concept: What is your user story? What was your motivation for development?
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-* Demo: Show your stuff!
-* Directions for Future Development
-* Links to to the deployed application and the GitHub repository
-
-## Grading Metrics
-
-| Metric        | Weight |
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
-
-## Submission on BCS
-
-You are required to submit the following:
-* The URL of the deployed application
-* The URL of the GitHub repository
+ njr7romano@yahoo.com
