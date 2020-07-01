@@ -15,7 +15,7 @@ This application gives the user the ability to search for recipes based on keywo
 ## Installation 
 1. Navigate to project folder in your terminal/command line  
 2. Install the following packages by typing the following and pressing enter: npm i bcrypt bcryptjs dotenv env express express-session mysql mysql2 passport passport-local sequelize  
-3. Get an API Key from the Spoonacular API by creating an account on [spoonacular.com/.](https://spoonacular.com/.)  
+3. Get an API Key from the Spoonacular API by creating an account on [spoonacular.com](https://spoonacular.com)  
  
 ## Usage 
 1.  The user starts by signing up for an account, and then logging in.  
